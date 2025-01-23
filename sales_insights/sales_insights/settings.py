@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'sales_insights.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sales_data',
+        'USER': 'root',
+        'PASSWORD': 'user',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
