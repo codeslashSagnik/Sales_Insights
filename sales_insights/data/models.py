@@ -6,6 +6,6 @@ class SalesData(models.Model):
     units_sold = models.IntegerField()
 
 class Meta:
-        db_table = 'sales_data'
+        db_table = 'data_salesdata'
 def __str__(self):
         return f"{self.date} - {self.price_per_unit} - {self.units_sold}"

@@ -8,7 +8,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         file_path = os.path.join(os.path.dirname(__file__), '../../csv_data/synthetic_sales_data.csv')
-        file_path = os.path.abspath(file_path)  # Convert to an absolute path
+        file_path = os.path.abspath(file_path)  
 
         try:
             with open(file_path, 'r') as file:
