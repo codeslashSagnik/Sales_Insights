@@ -16,7 +16,9 @@ class Command(BaseCommand):
                 for row in reader:
                     SalesData.objects.create(
                         date=row['date'],
+                        
                         price_per_unit=float(row['price_per_unit']),
+                        
                         units_sold=float(row['units_sold'])
                     )
             self.stdout.write(self.style.SUCCESS('Successfully loaded sales data into the database'))
